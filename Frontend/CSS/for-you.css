@@ -1,0 +1,134 @@
+/* =========================================
+   ORBIT — FOR YOU PAGE
+   ========================================= */
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 900px;
+}
+
+
+/* =========================================
+   FEED CARD
+   ========================================= */
+
+.feed-card {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    transition: 0.2s ease;
+}
+
+.feed-card:hover {
+    border-color: #bdbdb9;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CATEGORY
+   ========================================= */
+
+.feed-category {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    color: var(--muted);
+    margin-bottom: 9px;
+}
+
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.feed-card h2 {
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.feed-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   READ MORE LINK
+   ========================================= */
+
+.read-link {
+    display: inline-block;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.read-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+body.dark-mode .feed-card {
+    background: #1c1c1c;
+    color: #eeeeee;
+    border-color: #303030;
+}
+
+body.dark-mode .feed-card:hover {
+    border-color: #555555;
+}
+
+body.dark-mode .feed-category {
+    color: #999999;
+}
+
+body.dark-mode .feed-card h2 {
+    color: #eeeeee;
+}
+
+body.dark-mode .feed-card p {
+    color: #999999;
+}
+
+body.dark-mode .read-link {
+    color: #eeeeee;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .feed {
+        max-width: 100%;
+    }
+
+    .feed-card {
+        padding: 22px;
+    }
+
+    .feed-card h2 {
+        font-size: 19px;
+    }
+
+}

@@ -1,0 +1,403 @@
+/* =========================================
+   ORBIT GLOBAL CSS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #f5f5f3;
+    --surface: #ffffff;
+    --surface-2: #fafafa;
+    --text: #171717;
+    --muted: #777777;
+    --border: #e5e5e2;
+    --accent: #111111;
+    --sidebar: #111111;
+    --sidebar-text: #b5b5b5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.sidebar {
+    width: 240px;
+    background: var(--sidebar);
+    color: white;
+    min-height: 100vh;
+    padding: 30px 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 0 14px 45px;
+}
+
+.logo span {
+    opacity: 0.45;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px 14px;
+    border-radius: 8px;
+    color: var(--sidebar-text);
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    background: #202020;
+    color: white;
+}
+
+.nav a.active {
+    background: white;
+    color: #111;
+}
+
+.nav a span {
+    width: 20px;
+    text-align: center;
+}
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.main {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    padding: 40px 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: var(--muted);
+}
+
+.date {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* =========================================
+   PANELS
+   ========================================= */
+
+.panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 26px;
+    transition: background 0.2s ease, border 0.2s ease;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.panel-header h2 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.panel-header a {
+    font-size: 13px;
+    color: #666;
+}
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #999;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.primary-btn {
+    border: none;
+    background: #111;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.primary-btn:hover {
+    background: #333;
+}
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+body.dark-mode {
+    --background: #111111;
+    --surface: #1c1c1c;
+    --surface-2: #242424;
+    --text: #eeeeee;
+    --muted: #999999;
+    --border: #303030;
+    --accent: #ffffff;
+    --sidebar: #090909;
+    --sidebar-text: #aaaaaa;
+
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Text */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode strong {
+    color: var(--text);
+}
+
+body.dark-mode p,
+body.dark-mode span {
+    color: inherit;
+}
+
+/* Panels and cards */
+
+body.dark-mode .panel,
+body.dark-mode .stat-card,
+body.dark-mode .mail-card,
+body.dark-mode .course-card,
+body.dark-mode .schedule-container,
+body.dark-mode .task-card,
+body.dark-mode .info-card,
+body.dark-mode .settings-panel {
+    background: var(--surface);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+/* Header */
+
+body.dark-mode .header p,
+body.dark-mode .date {
+    color: var(--muted);
+}
+
+body.dark-mode .panel-header a {
+    color: #aaa;
+}
+
+body.dark-mode .eyebrow {
+    color: #999;
+}
+
+/* Borders */
+
+body.dark-mode .setting,
+body.dark-mode .assignment,
+body.dark-mode .deadline,
+body.dark-mode .summary-item {
+    border-color: var(--border);
+}
+
+/* Buttons */
+
+body.dark-mode .primary-btn {
+    background: #eeeeee;
+    color: #111111;
+}
+
+body.dark-mode .primary-btn:hover {
+    background: #cccccc;
+}
+
+/* Connect button */
+
+body.dark-mode .connect-btn {
+    background: #eeeeee;
+    color: #111111;
+}
+
+body.dark-mode .connect-btn:hover {
+    background: #cccccc;
+}
+
+/* Status badges */
+
+body.dark-mode .status,
+body.dark-mode .course-status,
+body.dark-mode .priority-badge {
+    background: #303030;
+    color: #cccccc;
+}
+
+/* Secondary buttons */
+
+body.dark-mode .secondary-btn {
+    background: #1c1c1c;
+    color: #eeeeee;
+    border-color: #444444;
+}
+
+body.dark-mode .secondary-btn:hover {
+    background: #292929;
+}
+
+/* Assignment buttons */
+
+body.dark-mode .assignment button {
+    background: #1c1c1c;
+    color: #eeeeee;
+    border-color: #444444;
+}
+
+body.dark-mode .assignment button:hover {
+    background: #eeeeee;
+    color: #111111;
+}
+
+/* Mail */
+
+body.dark-mode .mail-card {
+    background: #1c1c1c;
+}
+
+body.dark-mode .avatar {
+    background: #eeeeee;
+    color: #111111;
+}
+
+body.dark-mode .sender span,
+body.dark-mode .mail-count {
+    color: #999999;
+}
+
+body.dark-mode .summary-item span,
+body.dark-mode .orbit-take span {
+    color: #999999;
+}
+
+body.dark-mode .summary-item p {
+    color: #cccccc;
+}
+
+body.dark-mode .orbit-take {
+    background: #292929;
+    color: #eeeeee;
+}
+
+/* Schedule */
+
+body.dark-mode .calendar-event {
+    background: #292929;
+    color: #eeeeee;
+}
+
+body.dark-mode .free-block {
+    border-color: #555555;
+    color: #bbbbbb;
+}
+
+/* AI elements */
+
+body.dark-mode .ai-badge {
+    background: #292929;
+    color: #eeeeee;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .main {
+        margin-left: 190px;
+        width: calc(100% - 190px);
+        padding: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .setting {
+        align-items: flex-start;
+        gap: 15px;
+    }
+}

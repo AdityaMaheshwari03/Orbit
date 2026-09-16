@@ -1,0 +1,80 @@
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.course-card {
+    background: white;
+    border: 1px solid #e5e5e2;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.course-code {
+    font-size: 10px;
+    color: #999;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.course-header h2 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.course-status {
+    font-size: 9px;
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #eee;
+}
+
+.assignment {
+    border-top: 1px solid #eee;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assignment strong {
+    font-size: 13px;
+}
+
+.assignment p {
+    color: #888;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.assignment-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.assignment-right > span {
+    font-size: 11px;
+    color: #777;
+}
+
+.assignment button {
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.assignment button:hover {
+    background: #111;
+    color: white;
+}
