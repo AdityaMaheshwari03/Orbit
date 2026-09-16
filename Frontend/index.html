@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orbit — Dashboard</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            OR<span>BIT</span>
+        </div>
+
+        <nav class="nav">
+
+            <a href="index.html" class="active">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="mail.html">
+                <span>✉</span> Mail
+            </a>
+
+            <a href="tasks.html">
+                <span>✓</span> Tasks
+            </a>
+
+            <a href="schedule.html">
+                <span>▣</span> Schedule
+            </a>
+
+            <a href="classroom.html">
+                <span>▤</span> Classroom
+            </a>
+
+            <a href="for-you.html">
+                <span>✦</span> For You
+            </a>
+
+            <a href="settings.html">
+                <span>⚙</span> Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="header">
+
+            <div>
+                <h1>Good morning, Aditya.</h1>
+                <p>Your day, before it starts.</p>
+            </div>
+
+            <div class="date">
+                Friday, September 11
+            </div>
+
+        </header>
+
+
+        <!-- TOP CARDS -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-label">TODAY</span>
+                <strong>4</strong>
+                <p>Classes</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">DEADLINES</span>
+                <strong>3</strong>
+                <p>Due this week</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">MAIL</span>
+                <strong>7</strong>
+                <p>Need attention</p>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">FREE TIME</span>
+                <strong>2h 30m</strong>
+                <p>Available today</p>
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD GRID -->
+        <section class="dashboard-grid">
+
+
+            <!-- TODAY -->
+            <div class="panel today-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">YOUR DAY</span>
+                        <h2>Today's Schedule</h2>
+                    </div>
+
+                    <a href="schedule.html">View all →</a>
+                </div>
+
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="time">09:00</div>
+
+                        <div class="event">
+                            <strong>Linear Algebra</strong>
+                            <span>Room A-204 · 1 hour</span>
+                        </div>
+                    </div>
+
+
+                    <div class="timeline-item">
+                        <div class="time">11:00</div>
+
+                        <div class="event">
+                            <strong>Python Programming</strong>
+                            <span>Lab 3 · 2 hours</span>
+                        </div>
+                    </div>
+
+
+                    <div class="timeline-item">
+                        <div class="time">14:00</div>
+
+                        <div class="event">
+                            <strong>Electronics Fundamentals</strong>
+                            <span>Room B-102 · 1 hour</span>
+                        </div>
+                    </div>
+
+
+                    <div class="timeline-item">
+                        <div class="time">16:00</div>
+
+                        <div class="event free">
+                            <strong>Free time</strong>
+                            <span>1 hour available</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORBIT PLAN -->
+            <div class="panel ai-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">ORBIT AI</span>
+                        <h2>Your plan</h2>
+                    </div>
+
+                    <span class="ai-badge">✦ AI</span>
+                </div>
+
+
+                <p class="ai-intro">
+                    Based on your classes, deadlines and available time,
+                    here's what I'd prioritize today.
+                </p>
+
+
+                <div class="priority">
+
+                    <div class="priority-number">01</div>
+
+                    <div>
+                        <strong>Finish Python Assignment</strong>
+                        <p>Estimated 90 minutes · Due tomorrow</p>
+                    </div>
+
+                </div>
+
+
+                <div class="priority">
+
+                    <div class="priority-number">02</div>
+
+                    <div>
+                        <strong>Review Linear Algebra</strong>
+                        <p>Estimated 45 minutes · Upcoming test</p>
+                    </div>
+
+                </div>
+
+
+                <div class="priority">
+
+                    <div class="priority-number">03</div>
+
+                    <div>
+                        <strong>Reply to professor email</strong>
+                        <p>Estimated 10 minutes</p>
+                    </div>
+
+                </div>
+
+
+                <button class="primary-btn">
+                    Build my schedule
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- DEADLINES -->
+        <section class="panel deadlines-panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="eyebrow">UPCOMING</span>
+                    <h2>Deadlines</h2>
+                </div>
+
+                <a href="classroom.html">View classroom →</a>
+
+            </div>
+
+
+            <div class="deadline-list">
+
+                <div class="deadline">
+
+                    <div class="deadline-info">
+                        <strong>Python Programming Assignment</strong>
+                        <span>CS201 · 1.5 hours estimated</span>
+                    </div>
+
+                    <div class="deadline-date">
+                        Tomorrow
+                    </div>
+
+                </div>
+
+
+                <div class="deadline">
+
+                    <div class="deadline-info">
+                        <strong>Linear Algebra Problem Set</strong>
+                        <span>MATH301 · 2 hours estimated</span>
+                    </div>
+
+                    <div class="deadline-date">
+                        Sep 14
+                    </div>
+
+                </div>
+
+
+                <div class="deadline">
+
+                    <div class="deadline-info">
+                        <strong>Electronics Lab Report</strong>
+                        <span>EE101 · 1 hour estimated</span>
+                    </div>
+
+                    <div class="deadline-date">
+                        Sep 16
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/mail.js"></script>
+
+</body>
+</html>
