@@ -1,0 +1,127 @@
+.mail-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.mail-card {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid #e5e5e2;
+    border-radius: 18px;
+    padding: 35px;
+    min-height: 650px;
+}
+
+.mail-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.priority-badge {
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 7px 10px;
+    background: #f0f0ed;
+    border-radius: 20px;
+}
+
+.mail-count {
+    color: #999;
+    font-size: 12px;
+}
+
+.sender {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.sender strong {
+    display: block;
+    font-size: 14px;
+}
+
+.sender span {
+    display: block;
+    color: #888;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.mail-card h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-item {
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+}
+
+.summary-item span,
+.orbit-take span {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+    color: #999;
+}
+
+.summary-item p,
+.orbit-take p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 7px;
+}
+
+.orbit-take {
+    background: #f5f5f3;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.mail-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.secondary-btn,
+.mail-actions .primary-btn {
+    flex: 1;
+    padding: 13px;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background: var(--surface);
+    color: var(--text);
+}
+
+.mail-actions .primary-btn {
+    background: #111;
+    color: white;
+    border: none;
+}

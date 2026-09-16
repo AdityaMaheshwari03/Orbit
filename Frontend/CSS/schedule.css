@@ -1,0 +1,90 @@
+.schedule-container {
+    background: white;
+    border: 1px solid #e5e5e2;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.day-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.day-header strong {
+    font-size: 16px;
+}
+
+.day-header span {
+    color: #888;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.calendar {
+    position: relative;
+}
+
+.hour {
+    height: 60px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 75px;
+}
+
+.hour > span {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    color: #999;
+    font-size: 10px;
+}
+
+.calendar-event {
+    position: absolute;
+    left: 75px;
+    right: 20px;
+    top: 3px;
+    height: 54px;
+    background: #eeeeeb;
+    border-left: 3px solid #111;
+    padding: 9px 13px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.calendar-event.two-hour {
+    height: 114px;
+}
+
+.calendar-event strong {
+    display: block;
+    font-size: 12px;
+}
+
+.calendar-event span {
+    display: block;
+    font-size: 10px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.free-block {
+    position: absolute;
+    left: 75px;
+    right: 20px;
+    top: 3px;
+    height: 54px;
+    border: 1px dashed #bbb;
+    padding: 9px 13px;
+    border-radius: 5px;
+}
+
+.free-block strong {
+    display: block;
+    font-size: 12px;
+}
+
+.free-block span {
+    font-size: 10px;
+    color: #888;
+}
