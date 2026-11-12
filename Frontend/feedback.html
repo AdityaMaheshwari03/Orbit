@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit — Feedback</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="logo">OR<span>BIT</span></div>
+
+        <div class="orbit-profile" id="orbitProfile" hidden>
+            <img id="orbitProfilePicture"
+                 class="orbit-profile-picture"
+                 src=""
+                 alt="Profile picture"
+                 hidden>
+            <div class="orbit-profile-details">
+                <p id="orbitProfileName">Loading profile...</p>
+                <span id="orbitProfileEmail"></span>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html"><span>⌂</span> Dashboard</a>
+            <a href="mail.html"><span>✉</span> Mail</a>
+            <a href="tasks.html"><span>✓</span> Tasks</a>
+            <a href="schedule.html"><span>▣</span> Schedule</a>
+            <a href="classroom.html"><span>▤</span> Classroom</a>
+            <a href="for-you.html"><span>✦</span> For You</a>
+            <a href="settings.html"><span>⚙</span> Settings</a>
+            <a href="feedback.html" class="active"><span>✎</span> Feedback</a>
+
+            <button class="logout-btn" onclick="logoutOrbit()">
+                ↪ Logout
+            </button>
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <header class="header">
+            <div>
+                <span class="eyebrow">HELP US IMPROVE</span>
+                <h1>Share your feedback.</h1>
+                <p>Your thoughts help us make Orbit better for every student.</p>
+            </div>
+        </header>
+
+        <section class="feedback-layout">
+
+            <div class="panel feedback-form-panel">
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">YOUR VOICE MATTERS</span>
+                        <h2>Submit Feedback</h2>
+                    </div>
+                </div>
+
+                <form id="feedbackForm">
+
+                    <div class="form-group">
+                        <label for="feedbackCategory">Feedback category</label>
+                        <select id="feedbackCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="Bug Report">Bug Report</option>
+                            <option value="User Experience">User Experience</option>
+                            <option value="Feature Request">Feature Request</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How would you rate Orbit?</label>
+                        <div class="rating-options">
+                            <label><input type="radio" name="rating" value="1" required> 1</label>
+                            <label><input type="radio" name="rating" value="2"> 2</label>
+                            <label><input type="radio" name="rating" value="3"> 3</label>
+                            <label><input type="radio" name="rating" value="4"> 4</label>
+                            <label><input type="radio" name="rating" value="5"> 5</label>
+                        </div>
+                        <small>1 = Poor, 5 = Excellent</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackMessage">Your feedback</label>
+                        <textarea
+                            id="feedbackMessage"
+                            rows="6"
+                            maxlength="1000"
+                            placeholder="Tell us what you think, what could improve, or what feature you'd like to see..."
+                            required></textarea>
+                        <small><span id="characterCount">0</span>/1000 characters</small>
+                    </div>
+
+                    <button type="submit" class="primary-btn" id="submitFeedback">
+                        Submit Feedback →
+                    </button>
+
+                    <p id="feedbackStatus" class="feedback-status" role="status"></p>
+
+                </form>
+            </div>
+
+            <div class="panel feedback-info-panel">
+                <span class="eyebrow">WHY FEEDBACK?</span>
+                <h2>Build Orbit with us.</h2>
+                <p>
+                    Orbit is designed to make student life more organized.
+                    Your feedback helps us identify problems and prioritize
+                    improvements.
+                </p>
+
+                <div class="feedback-info-item">
+                    <strong>01 — Suggestions</strong>
+                    <p>Share ideas for new features and improvements.</p>
+                </div>
+
+                <div class="feedback-info-item">
+                    <strong>02 — Report issues</strong>
+                    <p>Tell us about bugs or anything that isn't working.</p>
+                </div>
+
+                <div class="feedback-info-item">
+                    <strong>03 — Rate your experience</strong>
+                    <p>Help us understand how useful Orbit is for you.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/feedback.js"></script>
+</body>
+</html>
