@@ -20,6 +20,22 @@
     <aside class="sidebar">
 
         <div class="logo">OR<span>BIT</span></div>
+        
+<div class="orbit-profile" id="orbitProfile" hidden>
+    <img
+        id="orbitProfilePicture"
+        class="orbit-profile-picture"
+        src=""
+        alt="Profile picture"
+        hidden
+    >
+
+    <div class="orbit-profile-details">
+        <p id="orbitProfileName">Loading profile...</p>
+        <span id="orbitProfileEmail"></span>
+    </div>
+</div>
+
 
         <nav class="nav">
 
@@ -46,6 +62,12 @@
             <a href="settings.html">
                 <span>⚙</span> Settings
             </a>
+            <a href="feedback.html"><span>✎</span> Feedback</a>
+            
+<button class="logout-btn" onclick="logoutOrbit()">
+    ↪ Logout
+</button>
+
 
         </nav>
 
@@ -54,121 +76,67 @@
 
     <main class="main">
 
-        <header class="header">
 
-            <div>
-                <span class="eyebrow">WORK</span>
-                <h1>Tasks</h1>
-                <p>Everything you need to get done.</p>
-            </div>
+<header class="header">
+    <div>
+        <span class="eyebrow">WORK</span>
+        <h1>Tasks</h1>
+        <p>Everything you need to get done.</p>
+    </div>
 
-            <button class="primary-btn">
-                + Add Task
-            </button>
+    <button class="primary-btn" id="addTaskButton" type="button">
+        + Add Task
+    </button>
+</header>
 
-        </header>
+<section class="panel">
 
+    <form id="taskForm" hidden>
+        <h2>New Task</h2>
 
-        <section class="panel">
+        <label for="taskTitle">Task title</label>
+        <input id="taskTitle" type="text" maxlength="255"
+               placeholder="e.g. Finish Python Assignment" required>
 
-            <div class="task-section">
+        <label for="taskDescription">Description</label>
+        <textarea id="taskDescription"
+                  placeholder="Add details (optional)"></textarea>
 
-                <span class="eyebrow">TODAY</span>
+        <label for="taskDueDate">Due date and time</label>
+        <input id="taskDueDate" type="datetime-local">
 
-                <div class="task">
+        <label for="taskPriority">Priority</label>
+        <select id="taskPriority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+        </select>
 
-                    <div class="checkbox"></div>
+        <button class="primary-btn" type="submit">Save Task</button>
+        <button type="button" id="cancelTaskButton">Cancel</button>
 
-                    <div class="task-content">
+        <p id="taskFormMessage" role="status"></p>
+    </form>
 
-                        <strong>Finish Python Assignment</strong>
+    <p id="taskStatus" role="status">Loading tasks...</p>
 
-                        <span>
-                            CS201 · Due tomorrow · 90 min
-                        </span>
+    <div class="task-section">
+        <span class="eyebrow">TO DO</span>
+        <div id="pendingTasks"></div>
+    </div>
 
-                    </div>
+    <div class="task-section completed">
+        <span class="eyebrow">COMPLETED</span>
+        <div id="completedTasks"></div>
+    </div>
 
-                    <span class="high">
-                        HIGH
-                    </span>
+</section>
 
-                </div>
-
-
-                <div class="task">
-
-                    <div class="checkbox"></div>
-
-                    <div class="task-content">
-
-                        <strong>Review Linear Algebra</strong>
-
-                        <span>
-                            MATH301 · Test coming up · 45 min
-                        </span>
-
-                    </div>
-
-                    <span class="medium">
-                        MEDIUM
-                    </span>
-
-                </div>
-
-
-                <div class="task">
-
-                    <div class="checkbox"></div>
-
-                    <div class="task-content">
-
-                        <strong>Reply to Professor Sharma</strong>
-
-                        <span>
-                            Email · 10 min
-                        </span>
-
-                    </div>
-
-                    <span class="medium">
-                        MEDIUM
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="task-section completed">
-
-                <span class="eyebrow">COMPLETED</span>
-
-                <div class="task">
-
-                    <div class="checkbox checked">
-                        ✓
-                    </div>
-
-                    <div class="task-content">
-
-                        <strong>Read Chapter 3</strong>
-
-                        <span>
-                            CS201 · Completed
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
 
     </main>
 
 </div>
 <script src="js/main.js"></script>
+<script src="js/tasks.js"></script>
 </body>
 </html>

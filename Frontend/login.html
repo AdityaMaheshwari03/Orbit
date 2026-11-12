@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orbit — Login</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <!-- Google Identity Services -->
+    <script
+        src="https://accounts.google.com/gsi/client"
+        async
+        defer>
+    </script>
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+
+        <!-- LEFT: BRANDING -->
+        <section class="login-brand">
+
+            <div class="logo">OR<span>BIT</span></div>
+
+            <div class="brand-content">
+                <p class="eyebrow">YOUR PERSONAL STUDY SPACE</p>
+
+                <h1>Your day,<br>before it starts.</h1>
+
+                <p class="brand-description">
+                    Your classes, emails, deadlines and plans —
+                    organized in one place.
+                </p>
+            </div>
+
+            <div class="brand-footer">
+                Less chaos. More clarity.
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT: LOGIN -->
+        <section class="login-panel">
+
+            <div class="login-card">
+
+                <p class="eyebrow">WELCOME TO ORBIT</p>
+
+                <h2>Sign in to continue</h2>
+
+                <p class="login-description">
+                    Your academic life, organized in one place.
+                </p>
+
+                <!-- Google sign-in button is rendered here -->
+                <div
+                    id="googleSignInButton"
+                    class="google-signin-container">
+                </div>
+
+                <!-- Login status messages -->
+                <p
+                    id="loginNotice"
+                    class="login-notice"
+                    role="status"
+                    aria-live="polite">
+                    Loading Google sign-in...
+                </p>
+
+                <div class="login-divider">
+                    <span>YOUR WORKSPACE</span>
+                </div>
+
+                <p class="privacy-note">
+                    Keep track of classes, assignments, emails,
+                    deadlines and your daily schedule with Orbit.
+                </p>
+
+            </div>
+
+            <p class="login-terms">
+                Sign in securely with Google.
+            </p>
+
+        </section>
+
+    </div>
+
+    <!-- Application JavaScript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+
+</body>
+</html>
