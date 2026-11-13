@@ -525,6 +525,7 @@ app.delete("/api/schedule/:id", requireAuth, async (req, res) => {
 
 // SUBMIT FEEDBACK
 app.post("/api/feedback", requireAuth, async (req, res) => {
+
     try {
         const { category, rating, message } = req.body;
 
@@ -581,7 +582,6 @@ app.post("/api/feedback", requireAuth, async (req, res) => {
     records.push(feedback);
     return records;
 });
-
 
         res.status(201).json({
             message: "Feedback submitted successfully.",
