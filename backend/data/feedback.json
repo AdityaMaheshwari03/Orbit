@@ -1,0 +1,72 @@
+[
+  {
+    "id": "c81a2b0d-e7ab-461b-bf2c-350c395585b3",
+    "user_id": "106883216443579353218",
+    "user_name": "Aditya Maheshwari",
+    "user_email": "aditya.maheshwari1.25cse@bmu.edu.in",
+    "category": "Bug Report",
+    "rating": 3,
+    "message": "goodew",
+    "created_at": "2026-11-12T08:43:04.364Z"
+  },
+  {
+    "id": "f54c81a5-5c01-4c54-88e7-9278e1d342f1",
+    "user_id": "106883216443579353218",
+    "user_name": "Aditya Maheshwari",
+    "user_email": "aditya.maheshwari1.25cse@bmu.edu.in",
+    "category": "Suggestion",
+    "rating": 2,
+    "message": "wewfwfcw",
+    "created_at": "2026-11-12T08:43:22.243Z"
+  },
+  {
+    "id": "ce90428b-f169-47f8-8721-b18252cd0f39",
+    "user_id": "106883216443579353218",
+    "user_name": "Aditya Maheshwari",
+    "user_email": "aditya.maheshwari1.25cse@bmu.edu.in",
+    "category": "User Experience",
+    "rating": 4,
+    "message": "watffew",
+    "created_at": "2026-11-12T08:44:12.104Z"
+  },
+  {
+    "id": "5f536dab-6f84-4e11-a6c9-1d1972bbe156",
+    "user_id": "114431721273542609558",
+    "user_name": "Aditya Maheshwari",
+    "user_email": "maheshwariadi03@gmail.com",
+    "category": "Bug Report",
+    "rating": 2,
+    "message": "sdhgret",
+    "created_at": "2026-11-12T08:51:22.511Z"
+  },
+  {
+    "id": "5f536dab-6f84-4e11-a6c9-1d1972bbe156",
+    "user_id": "114431721273542609558",
+    "user_name": "Aditya Maheshwari",
+    "user_email": "maheshwariadi03@gmail.com",
+    "category": "Bug Report",
+    "rating": 2,
+    "message": "sdhgret",
+    "created_at": "2026-11-12T08:51:22.511Z"
+  },
+  {
+    "id": "806579c8-db41-4630-9fe4-0658e585a4a3",
+    "user_id": "114431721273542609558",
+    "user_name": "Aditya Maheshwari",
+    "user_email": "maheshwariadi03@gmail.com",
+    "category": "Feature Request",
+    "rating": 5,
+    "message": "qwe5rt34w 4 3tgw4",
+    "created_at": "2026-11-12T09:00:32.400Z"
+  },
+  {
+    "id": "806579c8-db41-4630-9fe4-0658e585a4a3",
+    "user_id": "114431721273542609558",
+    "user_name": "Aditya Maheshwari",
+    "user_email": "maheshwariadi03@gmail.com",
+    "category": "Feature Request",
+    "rating": 5,
+    "message": "qwe5rt34w 4 3tgw4",
+    "created_at": "2026-11-12T09:00:32.400Z"
+  }
+]

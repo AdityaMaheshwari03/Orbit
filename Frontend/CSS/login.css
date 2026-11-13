@@ -1,0 +1,269 @@
+
+/* ========================================
+   ORBIT LOGIN — BLACK & WHITE THEME
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body.login-page {
+    margin: 0;
+    min-height: 100vh;
+    background: #000000;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main layout */
+
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ========================================
+   LEFT BRANDING
+======================================== */
+
+.login-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 55px 9%;
+    background: #000000;
+    color: #ffffff;
+}
+
+.login-brand .logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.login-brand .logo span {
+    color: #ffffff;
+}
+
+.brand-content {
+    max-width: 480px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 70px 0;
+}
+
+.eyebrow {
+    margin: 0 0 18px;
+    color: #b5b5b5;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.brand-content h1 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: clamp(38px, 4vw, 58px);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.brand-description {
+    max-width: 390px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.brand-footer {
+    margin: 0;
+    color: #b5b5b5;
+    font-size: 12px;
+}
+
+/* ========================================
+   RIGHT LOGIN SECTION
+======================================== */
+
+.login-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 48px 8%;
+    background: #ffffff;
+    color: #000000;
+    border-left: 1px solid #e5e5e5;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 42px;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+}
+
+.login-card .eyebrow {
+    color: #666666;
+    margin-bottom: 14px;
+}
+
+.login-card h2 {
+    margin: 0 0 12px;
+    color: #000000;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.6px;
+}
+
+.login-description {
+    margin: 0 0 30px;
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Google button */
+
+.google-signin-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 44px;
+    margin: 0 0 14px;
+    overflow: visible;
+}
+
+/* Login status */
+
+.login-notice {
+    min-height: 20px;
+    margin: 12px 0 24px;
+    color: #555555;
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Divider */
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 28px 0 20px;
+    color: #666666;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+.login-divider span {
+    white-space: nowrap;
+}
+
+/* Supporting text */
+
+.privacy-note {
+    margin: 0;
+    color: #555555;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.login-terms {
+    margin: 24px 0 0;
+    color: #666666;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+    .login-brand {
+        padding: 40px 7%;
+    }
+
+    .login-panel {
+        padding: 32px 6%;
+    }
+
+    .login-card {
+        padding: 30px;
+    }
+
+    .brand-content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-brand {
+        min-height: auto;
+        padding: 30px 25px 20px;
+    }
+
+    .brand-content {
+        padding: 55px 0 35px;
+    }
+
+    .brand-content h1 {
+        font-size: 38px;
+    }
+
+    .brand-description {
+        font-size: 14px;
+    }
+
+    .brand-footer {
+        display: none;
+    }
+
+    .login-panel {
+        min-height: auto;
+        padding: 20px 20px 45px;
+        border-left: none;
+        background: #ffffff;
+    }
+
+    .login-card {
+        max-width: 440px;
+        padding: 28px 24px;
+    }
+
+    .login-card h2 {
+        font-size: 25px;
+    }
+
+    .login-terms {
+        margin-top: 20px;
+    }
+}
